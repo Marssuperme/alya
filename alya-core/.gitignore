@@ -11,6 +11,5 @@ logs
 *.log
 **/dist/
 **/target/
-log/
 
 /bin/
