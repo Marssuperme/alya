@@ -25,14 +25,14 @@ public class DefaultExceptionHandlerAdvice {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseResult<Object> exception(Exception e) {
         LOGGER.error("Base exception: {}", e.getMessage());
-        return ResponseResult.fail();
+        return ResponseResult.fail(e.getMessage());
     }
 
     @ExceptionHandler(Throwable.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseResult<Object> throwable(Throwable t) {
         LOGGER.error("Base throwable: {}", t.getMessage());
-        return ResponseResult.fail();
+        return ResponseResult.fail(t.getMessage());
     }
 
     @ExceptionHandler(DataNotFoundException.class)
