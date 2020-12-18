@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.alya.web.config.WebMvcConfig,\
+com.alya.web.swagger.Knife4jAutoConfiguration,\
+com.alya.web.application.ApplicationInfoPrint

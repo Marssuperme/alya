@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+alya:
+  swagger:
+    enable: true
+    title: "中心API"
+    description: "中心API"
+    version: "1.0.0"
+    basePackage: "com.alya"
+    terms-of-service-url: ""

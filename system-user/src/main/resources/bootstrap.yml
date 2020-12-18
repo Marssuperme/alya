@@ -1,0 +1,7 @@
+server:
+  port: 1002
+spring:
+  application:
+    name: system-user
+  profiles:
+    active: @profileActive@

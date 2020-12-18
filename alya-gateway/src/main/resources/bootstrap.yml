@@ -1,0 +1,12 @@
+server:
+  port: 1001
+spring:
+  application:
+    name: alya-gateway
+  profiles:
+    active: @profileActive@
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
