@@ -3,6 +3,17 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    servlet:
+      content-type: text/html
+    encoding: UTF-8
+    cache: false
+    mvc:
+      favicon:
+        enabled: false
 
 alya:
   swagger:
@@ -12,3 +23,4 @@ alya:
     version: "1.0.0"
     basePackage: "com.alya"
     terms-of-service-url: ""
+
