@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    username: alya
+    password: alya
+    virtual-host: /
+    listener:
+      direct:
+        acknowledge-mode: manual
